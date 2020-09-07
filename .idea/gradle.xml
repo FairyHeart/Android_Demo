@@ -16,10 +16,10 @@
             <option value="$PROJECT_DIR$/android_statusbar" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/danmaku" />
+            <option value="$PROJECT_DIR$/jitpack" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
-        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
   </component>

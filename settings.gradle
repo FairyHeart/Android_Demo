@@ -1,3 +1,4 @@
+include ':jitpack'
 rootProject.name='Android_Demo'
 include ':app'
 include ':android_8_icon'
