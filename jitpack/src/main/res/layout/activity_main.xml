@@ -34,4 +34,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LiveDataActivity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/room_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RoomActivity" />
 </androidx.appcompat.widget.LinearLayoutCompat>

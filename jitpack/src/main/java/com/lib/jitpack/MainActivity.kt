@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.lib.jitpack.lifecycles.LifeCycleActivity
 import com.lib.jitpack.lifecycles.MyLifeCycleActivity
 import com.lib.jitpack.livedata.LiveDataActivity
+import com.lib.jitpack.room.RoomActivity
 import com.lib.jitpack.viewmodel.ViewModelActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -31,6 +32,10 @@ class MainActivity : AppCompatActivity() {
         }
         live_data_btn.setOnClickListener {
             val intent = Intent(this, LiveDataActivity::class.java)
+            startActivity(intent)
+        }
+        room_btn.setOnClickListener {
+            val intent = Intent(this, RoomActivity::class.java)
             startActivity(intent)
         }
     }
