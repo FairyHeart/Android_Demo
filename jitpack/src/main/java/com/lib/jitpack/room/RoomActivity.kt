@@ -3,8 +3,13 @@ package com.lib.jitpack.room
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.lib.jitpack.R
+import com.lib.jitpack.room.bo.AddressBo
+import com.lib.jitpack.room.bo.BookBo
+import com.lib.jitpack.room.bo.UserBo
+import java.util.*
 
 class RoomActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_room)
@@ -12,17 +17,21 @@ class RoomActivity : AppCompatActivity() {
         AppDataBase.initDatabase(this)
 
         val userDao = AppDataBase.instance.userDao()
-        val userId = "id_001"
-        val address = Address(address = "杭州", userId = userId)
-        val user = User(userId = userId, name = "张三", age = 20, address = address)
+        val bookDao = AppDataBase.instance.bookDao()
 
-        Thread {
-            val user2 = userDao.selectById(user.id.toString())
-            if (user2 != null) {
-                userDao.update(user)
-            } else {
-                userDao.insert(user)
-            }
-        }.start()
+        val address = AddressBo(city = "杭州", state = "三墩镇", street = "西城年华")
+
+        val user = UserBo(
+            firstName = "liucj001",
+            lastName = "cj",
+            age = 20,
+            addressBo = address,
+            birthday = Date()
+        )
+        userDao.insert(user)
+
+        val book = BookBo(title = "java编程思想", userId = user.id+10)
+        bookDao.insert(book)
+
     }
 }

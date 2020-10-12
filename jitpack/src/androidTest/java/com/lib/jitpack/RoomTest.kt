@@ -3,13 +3,15 @@ package com.lib.jitpack
 import androidx.room.Room
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import com.lib.jitpack.room.Address
 import com.lib.jitpack.room.AppDataBase
-import com.lib.jitpack.room.User
+import com.lib.jitpack.room.bo.AddressBo
+import com.lib.jitpack.room.bo.BookBo
+import com.lib.jitpack.room.bo.UserBo
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
+import java.util.*
 
 /**
  * 数据库测试类
@@ -25,22 +27,27 @@ class RoomTest {
 
     @Before
     fun initDb() {
-        val instance = Room.inMemoryDatabaseBuilder(
+        dataBase = Room.inMemoryDatabaseBuilder(
             InstrumentationRegistry.getInstrumentation().context,
             AppDataBase::class.java
-        )
+        ).allowMainThreadQueries().build()
     }
 
     @Test
     fun insertUser() {
-        val userId = "id_001"
-        val address = Address(address = "杭州", userId = userId)
-        val user = User(user_Id = userId, name = "张三", age = 20)
-        dataBase.userDao().insert(user)
 
-        val localUser = dataBase.userDao().selectById(userId)
-        println(localUser.toString())
+        val userDao = dataBase.userDao()
+        val bookDao = dataBase.bookDao()
 
+        val address = AddressBo(city = "杭州", state = "三墩镇", street = "西城年华")
+
+        val user = UserBo(firstName = "liucy", lastName = "cj", age = 19, addressBo = address,birthday = Date())
+        userDao.insert(user)
+
+        val book = BookBo(id = 10, title = "java编程思想", userId = 0)
+        bookDao.insert(book)
+
+        val userDb = userDao.selectAll()
     }
 
     @After
