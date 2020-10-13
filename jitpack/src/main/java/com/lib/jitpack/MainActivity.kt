@@ -38,5 +38,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RoomActivity::class.java)
             startActivity(intent)
         }
+        navigation_btn.setOnClickListener {
+//            val intent = Intent(this, NavigationActivity::class.java)
+//            startActivity(intent)
+        }
     }
 }

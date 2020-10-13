@@ -7,9 +7,6 @@ import androidx.lifecycle.ViewModel
 
 /**
  *
- *
- * @author: Guazi.
- * @date  : 2020/9/8.
  */
 class LiveDataViewModel : ViewModel() {
 

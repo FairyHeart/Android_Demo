@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".room.RoomActivity"></activity>
+        <activity android:name=".navigation.TwoActivity"></activity>
+        <activity android:name=".navigation.OneActivity" />
+        <activity android:name=".navigation.NavigationActivity" />
+        <activity android:name=".room.RoomActivity" />
         <activity android:name=".livedata.LiveDataActivity" />
         <activity android:name=".viewmodel.ViewModelActivity" />
         <activity android:name=".MainActivity">

@@ -6,8 +6,6 @@ import androidx.lifecycle.ViewModelProvider
 /**
  *
  *
- * @author: Guazi.
- * @date  : 2020/9/7.
  */
 class MyViewModel(var name: String) : ViewModel() {
 

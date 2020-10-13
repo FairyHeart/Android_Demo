@@ -3,10 +3,9 @@ package com.lib.jitpack.viewmodel
 import android.app.Application
 import android.os.Bundle
 import android.util.Log
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.SavedStateViewModelFactory
-import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.*
 import com.lib.jitpack.R
 import com.lib.jitpack.Tag
 import kotlinx.android.synthetic.main.activity_view_model.*
@@ -32,19 +31,27 @@ class ViewModelActivity : AppCompatActivity() {
             )
 
         //onSaveInstanceState状态保存model
-        val saveModel =
+        val saveModel2 =
             ViewModelProvider(this, MySaveViewModel.ViewModelFactory(this, savedInstanceState)).get(
                 MySaveViewModel::class.java
             )
 
-        Log.i(Tag, androidModel.getApplication<Application>().toString())
+//        val saveModel2 = ViewModelProvider(
+//            this,
+//            SavedStateViewModelFactory(application, this, savedInstanceState)
+//        ).get(MySaveViewModel::class.java)
+
+//        val saveModel2 by viewModels<MySaveViewModel> {
+//            SavedStateViewModelFactory(application, this, savedInstanceState)
+//        }
+
+        saveModel2.getCount()?.observe(this, Observer<Int> {
+            txt_tv.text = it.toString()
+        })
 
         btn.setOnClickListener {
-            saveModel.add()
-            txt_tv.text = saveModel.count.toString()
+            saveModel2.add()
         }
-
-        txt_tv.text = saveModel.count.toString()
 
     }
 }

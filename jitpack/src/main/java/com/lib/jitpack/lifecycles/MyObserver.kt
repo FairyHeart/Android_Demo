@@ -7,8 +7,6 @@ import androidx.lifecycle.OnLifecycleEvent
 /**
  *
  *
- * @author: Guazi.
- * @date  : 2020/9/7.
  */
 class MyObserver(var lifecycle: Lifecycle, var callBack: (String) -> Unit) : LifecycleObserver {
 

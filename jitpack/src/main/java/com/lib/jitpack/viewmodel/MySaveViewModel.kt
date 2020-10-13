@@ -2,6 +2,7 @@ package com.lib.jitpack.viewmodel
 
 import android.os.Bundle
 import androidx.lifecycle.AbstractSavedStateViewModelFactory
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.savedstate.SavedStateRegistryOwner
@@ -9,15 +10,19 @@ import androidx.savedstate.SavedStateRegistryOwner
 /**
  *
  *
- * @author: Guazi.
- * @date  : 2020/9/8.
  */
 class MySaveViewModel(private val handle: SavedStateHandle) : ViewModel() {
 
-    var count = handle.get<Int>("countKey") ?: 1
 
     fun add() {
-        handle.set("countKey", count++)
+        getCount().value = getCount().value?.plus(1)
+    }
+
+    fun getCount(): MutableLiveData<Int> {
+        if (!handle.contains("countKey")) {
+            handle.set("countKey", 0)
+        }
+        return handle.getLiveData("countKey")
     }
 
     class ViewModelFactory(owner: SavedStateRegistryOwner, defaultArgs: Bundle? = null) :
