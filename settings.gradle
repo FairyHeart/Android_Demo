@@ -1,3 +1,4 @@
+include ':android_hotfix'
 include ':jitpack'
 rootProject.name='Android_Demo'
 include ':app'

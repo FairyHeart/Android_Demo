@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android_8_icon" />
             <option value="$PROJECT_DIR$/android_8_notification" />
+            <option value="$PROJECT_DIR$/android_hotfix" />
             <option value="$PROJECT_DIR$/android_statusbar" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/danmaku" />
@@ -20,6 +21,7 @@
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
+        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
   </component>
