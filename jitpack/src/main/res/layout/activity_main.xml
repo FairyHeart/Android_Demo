@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/life_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LifeCycleActivity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/my_life_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyLifeCycleActivity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/view_model_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ViewModelActivity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/live_data_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LiveDataActivity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/room_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RoomActivity" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/navigation_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Navigation Activity" />
+</androidx.appcompat.widget.LinearLayoutCompat>
