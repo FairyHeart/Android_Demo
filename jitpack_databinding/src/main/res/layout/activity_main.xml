@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.lib.jitpack_databinding.BookUtils" />
+
+        <variable
+            name="book"
+            type="com.lib.jitpack_databinding.Book" />
+
+        <variable
+            name="activity"
+            type="com.lib.jitpack_databinding.MainActivity" />
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="80dp"
+        tools:context=".MainActivity">
+
+        <include
+            layout="@layout/include_main"
+            app:activity="@{activity}"
+            app:book="@{book}" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
