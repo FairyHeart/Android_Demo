@@ -17,8 +17,14 @@
             <option value="$PROJECT_DIR$/android_statusbar" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/danmaku" />
-            <option value="$PROJECT_DIR$/jitpack" />
-            <option value="$PROJECT_DIR$/jitpack_databinding" />
+            <option value="$PROJECT_DIR$/jetpack" />
+            <option value="$PROJECT_DIR$/jetpack_databinding" />
+            <option value="$PROJECT_DIR$/jetpack_lifecycle" />
+            <option value="$PROJECT_DIR$/jetpack_livedata" />
+            <option value="$PROJECT_DIR$/jetpack_paging" />
+            <option value="$PROJECT_DIR$/jetpack_room" />
+            <option value="$PROJECT_DIR$/jetpack_viewmodel" />
+            <option value="$PROJECT_DIR$/jetpack_workmanager" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
