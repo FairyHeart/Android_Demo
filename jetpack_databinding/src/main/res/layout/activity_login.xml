@@ -7,11 +7,11 @@
 
         <variable
             name="vm"
-            type="com.lib.jitpack_databinding.login.LoginModel" />
+            type="com.lib.jetpack_databinding.login.LoginModel" />
 
         <variable
             name="vmField"
-            type="com.lib.jitpack_databinding.login.LoginModelField" />
+            type="com.lib.jetpack_databinding.login.LoginModelField" />
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:text="@{vm.userName}" />
 
-        <com.lib.jitpack_databinding.ui.MyTextView
+        <com.lib.jetpack_databinding.ui.MyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:item_text_tip="@{vm.userName}" />

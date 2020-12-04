@@ -1,3 +1,4 @@
+include ':jetpack-navigation'
 include ':jetpack_workmanager'
 include ':jetpack_paging'
 include ':jetpack_room'

@@ -5,7 +5,7 @@
     <data>
         <variable
             name="tv"
-            type="com.lib.jitpack_databinding.ui.MyTextView" />
+            type="com.lib.jetpack_databinding.ui.MyTextView" />
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat

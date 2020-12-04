@@ -7,7 +7,7 @@
 
         <variable
             name="activity"
-            type="com.lib.jitpack_databinding.recyclerview.RecyclerActivity" />
+            type="com.lib.jetpack_databinding.recyclerview.RecyclerActivity" />
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat

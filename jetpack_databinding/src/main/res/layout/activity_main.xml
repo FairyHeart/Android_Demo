@@ -5,15 +5,15 @@
 
     <data>
 
-        <import type="com.lib.jitpack_databinding.BookUtils" />
+        <import type="com.lib.jetpack_databinding.BookUtils" />
 
         <variable
             name="book"
-            type="com.lib.jitpack_databinding.Book" />
+            type="com.lib.jetpack_databinding.Book" />
 
         <variable
             name="activity"
-            type="com.lib.jitpack_databinding.MainActivity" />
+            type="com.lib.jetpack_databinding.MainActivity" />
 
     </data>
 
