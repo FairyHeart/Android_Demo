@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -9,8 +10,8 @@
             type="com.lib.jitpack_databinding.login.LoginModel" />
 
         <variable
-            name="activity"
-            type="com.lib.jitpack_databinding.login.LoginActivity" />
+            name="vmField"
+            type="com.lib.jitpack_databinding.login.LoginModelField" />
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -24,10 +25,46 @@
             android:layout_height="wrap_content"
             android:text="@={vm.userName}" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="@{()->activity.print()}"
             android:text="@{vm.userName}" />
+
+        <com.lib.jitpack_databinding.ui.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:item_text_tip="@{vm.userName}" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@={vmField.loginField.userName}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->vmField.print()}"
+            android:text="@{vmField.loginField.userName}" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@={vmField.userNameField}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{vmField.userNameField}" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@={vmField.userNameLiveData}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->vmField.printLiveData()}"
+            android:text="@{vmField.userNameLiveData}" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>

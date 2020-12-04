@@ -9,6 +9,7 @@ import androidx.appcompat.widget.AppCompatImageView
 import androidx.databinding.DataBindingUtil
 import com.lib.jitpack_databinding.databinding.ActivityMainBinding
 import com.lib.jitpack_databinding.login.LoginActivity
+import com.lib.jitpack_databinding.recyclerview.RecyclerActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,5 +38,8 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this,LoginActivity::class.java)
         startActivity(intent)
     }
-
+    fun recycler(){
+        val intent = Intent(this,RecyclerActivity::class.java)
+        startActivity(intent)
+    }
 }
