@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
             DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
         val book = Book(title = "JetPack", author = "kotlin", 5)
-        binding.setVariable(BR.book, book)
-//        binding.book = book //或者直接绑定
+//        binding.setVariable(BR.book, book)
+        binding.book = book //或者直接绑定
 
         binding.activity = this
     }

@@ -15,6 +15,8 @@ class LoginActivity : AppCompatActivity() {
             DataBindingUtil.setContentView<ActivityLoginBinding>(this, R.layout.activity_login)
         vm = LoginModel(LoginDto("JitPack"))
         binding.vm = vm
+        binding.lifecycleOwner = this
+        binding.executePendingBindings()
 
         val vmField = LoginModelField()
         binding.vmField = vmField
