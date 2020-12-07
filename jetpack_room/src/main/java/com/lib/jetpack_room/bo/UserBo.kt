@@ -1,9 +1,8 @@
-package com.lib.jitpack.room.bo
+package com.lib.jetpack_room.bo
 
 import android.graphics.Bitmap
 import androidx.room.*
-import com.lib.jitpack.room.Converters
-import java.util.*
+import com.lib.jetpack_room.bo.AddressBo
 
 /**
  * tableName：设置表名字。默认是类的名字
