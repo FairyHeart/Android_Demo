@@ -2,12 +2,12 @@ package com.lib.jetpack_paging
 
 import android.content.Intent
 import android.os.Bundle
-import android.service.autofill.UserData
 import androidx.databinding.DataBindingUtil
 import com.lib.jetpack_paging.bo.UserBo
 import com.lib.jetpack_paging.databinding.ActivityMainBinding
 import com.lib.jetpack_paging.db.AppDatabase
 import com.lib.jetpack_paging.db.UserDao
+import com.lib.jetpack_paging.paging3.UserActivity
 import com.lib.lib_network.test.LoginActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

@@ -1,4 +1,4 @@
-package com.lib.jetpack_paging.adapter
+package com.lib.jetpack_paging.paging3.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -11,10 +11,8 @@ import com.lib.jetpack_paging.bo.UserBo
 import com.lib.jetpack_paging.databinding.AdapterUserBinding
 
 /**
- *
- *
- * @author: GuaZi.
- * @date  : 2020/12/8.
+ * 继承PagedListAdapter
+ * 需要在构造方法里传入一个DiffUtil.ItemCallback用来确定差量更新的时候的计算规则
  */
 class UserAdapter : PagingDataAdapter<UserBo, UserAdapter.UserViewHolder>(diffCallback) {
 
