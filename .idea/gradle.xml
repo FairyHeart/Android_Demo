@@ -26,6 +26,7 @@
             <option value="$PROJECT_DIR$/jetpack_room" />
             <option value="$PROJECT_DIR$/jetpack_viewmodel" />
             <option value="$PROJECT_DIR$/jetpack_workmanager" />
+            <option value="$PROJECT_DIR$/lib_network" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

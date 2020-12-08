@@ -6,32 +6,21 @@
     <data>
 
         <variable
-            name="activity"
-            type="com.lib.jetpack_paging.MainActivity" />
+            name="user"
+            type="com.lib.jetpack_paging.bo.UserBo" />
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
         android:orientation="vertical"
         tools:context=".MainActivity">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="@{()->activity.insertUser()}"
-            android:text="Insert User" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="wrap_content"
-            android:text="go To UserActivity"
-            android:onClick="@{()->activity.goToUserActivity()}"
-            android:layout_height="wrap_content"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:text="@{user.name}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
