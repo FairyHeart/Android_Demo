@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/danmaku" />
             <option value="$PROJECT_DIR$/jetpack" />
             <option value="$PROJECT_DIR$/jetpack-navigation" />
+            <option value="$PROJECT_DIR$/jetpack_app_startup" />
             <option value="$PROJECT_DIR$/jetpack_databinding" />
             <option value="$PROJECT_DIR$/jetpack_lifecycle" />
             <option value="$PROJECT_DIR$/jetpack_livedata" />
