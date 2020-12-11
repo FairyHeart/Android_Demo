@@ -16,4 +16,6 @@ interface UserDao : IBaseDao<UserBo> {
     @Query("select * from user ")
     fun queryAllUser(): MutableList<UserBo>
 
+    @Query("select * from user order by id limit :size offset :index")
+    fun queryUser(index: Int, size: Int): MutableList<UserBo>
 }

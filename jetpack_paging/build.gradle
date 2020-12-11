@@ -89,4 +89,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0-beta01'
     //拓展 LifecycleScope
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.0-beta01'
+
+    //SwipeRefresh
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
 }
