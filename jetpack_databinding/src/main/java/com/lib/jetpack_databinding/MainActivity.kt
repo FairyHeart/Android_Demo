@@ -29,16 +29,27 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "click me", Toast.LENGTH_SHORT).show()
     }
 
-    fun click() {
+    fun onClick(view: View) {
+        when (view.id) {
+            R.id.recycler_btn -> {
+                val intent = Intent(this, RecyclerActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.login_btn -> {
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+            }
+        }
         Toast.makeText(this, "click", Toast.LENGTH_SHORT).show()
     }
 
-    fun login(){
-        val intent = Intent(this,LoginActivity::class.java)
+    fun login() {
+        val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
-    fun recycler(){
-        val intent = Intent(this,RecyclerActivity::class.java)
+
+    fun recycler() {
+        val intent = Intent(this, RecyclerActivity::class.java)
         startActivity(intent)
     }
 }

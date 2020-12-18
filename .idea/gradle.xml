@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/jetpack_lifecycle" />
             <option value="$PROJECT_DIR$/jetpack_livedata" />
             <option value="$PROJECT_DIR$/jetpack_mvvm" />
+            <option value="$PROJECT_DIR$/jetpack_mvvm2" />
             <option value="$PROJECT_DIR$/jetpack_paging" />
             <option value="$PROJECT_DIR$/jetpack_room" />
             <option value="$PROJECT_DIR$/jetpack_viewmodel" />

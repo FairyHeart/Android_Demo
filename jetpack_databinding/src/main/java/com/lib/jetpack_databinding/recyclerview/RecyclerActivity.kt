@@ -19,7 +19,8 @@ class RecyclerActivity : AppCompatActivity() {
         binding.activity = this
 
 
-        val adapter = BookAdapter(getBooks())
+        val adapter = BookAdapter()
+        adapter.setNewData(getBooks())
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = adapter
     }

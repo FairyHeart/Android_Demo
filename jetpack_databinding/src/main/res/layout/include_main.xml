@@ -49,15 +49,17 @@
             android:text="Click" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/recycler_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="@{()->activity.recycler()}"
+            android:onClick="@{(v)->activity.onClick(v)}"
             android:text="goToRecycler" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="@{()->activity.login()}"
+            android:onClick="@{activity.onClick}"
             android:text="Login" />
 
         <androidx.appcompat.widget.AppCompatImageView
